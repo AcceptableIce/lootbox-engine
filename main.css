@@ -1,0 +1,108 @@
+body {
+	font-size: 16px;
+	font-family: Helvetica, "Trebuchet MS", sans-serif;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 0 10px;
+	max-width: 980px;
+}
+
+.rollers {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+}
+
+.rollers button {
+	width: 100%;
+	background-color: #5e74ca;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	margin-bottom: 5px;
+	border: none;
+	border-bottom: 2px solid #1b3390;
+	border-radius: 4px;
+	font-size: 0.75rem;
+}
+
+.output {
+	padding: 0 25px;
+	align-self: stretch;
+	flex-shrink: 1;
+	width: 100%;
+}
+
+.roll {
+	width: 100%;
+	font-size: 1.0rem;
+	padding: 0.5rem 0.25rem;
+	margin-bottom: 10px;
+}
+
+.roll.low {
+	background-color: rgba(255, 0, 0, 0.25);
+}
+
+.roll.medium {
+	background-color: rgba(255, 255, 0, 0.25);
+}
+
+.roll.high {
+	background-color: rgba(0, 255, 0, 0.25);
+}
+
+.item {
+	font-size: 1.5rem;
+	padding: 1rem 0.25rem;
+
+}
+
+.poolData {
+	position: relative;
+	box-sizing: border-box;
+	padding: 0.25rem 0.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	margin-top: 1rem;
+	line-height: 1.4rem;
+}
+
+.poolData:before {
+	content: "Pool Odds";
+	position: absolute;
+	text-transform: uppercase;
+	font-size: 0.5rem;
+	top: -16px;
+}
+
+.rarity {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+	align-content: center;
+	line-height: 1.4rem;
+}
+
+.rarity .name {
+	padding: 2px 4px;
+	background-color: rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.rarity .odds {
+	padding: 2px 4px;
+	margin-left: 8px;
+}
+
+.normalizationWarning {
+	padding: 0.25rem 0.5rem;
+	background-color: rgba(255, 255, 0, 0.5);
+}
+
+.hidden {
+	display: none;
+}
