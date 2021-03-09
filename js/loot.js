@@ -2,7 +2,7 @@
 	function querySheet(gid, query) {
 		return new Promise((resolve, reject) => {
 			window.sheetrock({
-				url: `https://docs.google.com/spreadsheets/d/12TKHFk2Igwm5D1f9jJlJdKn9CFSgn3Q1mksQBAqNM9U-7kAYHvRedw/edit#gid=${gid}`,
+				url: `https://docs.google.com/spreadsheets/d/12TKHFk2Igwm5D1f9jJlJdKn9CFSgn3Q1mksQBAqNM9U/edit#gid=${gid}`,
 				query: query,
 				callback: (err, options, response) => {
 					if(err) {
